@@ -4,7 +4,7 @@ public class ThreadDemo {
     public static void main(String[] args) {
 
         //First thread: Thread - JOHN
-        Runnable thraed1 = ()->{
+        Runnable thread1 = ()->{
             // thread body
             for(int i=1;i<=10;i++){
                 System.out.println("Value of i = " + i);
@@ -17,7 +17,7 @@ public class ThreadDemo {
             }
         };
 
-        Thread t = new Thread(thraed1);
+        Thread t = new Thread(thread1);
         t.setName("JOHN");
         t.start();
 
