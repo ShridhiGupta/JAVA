@@ -3,8 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Java.iml" filepath="$PROJECT_DIR$/Java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lambda/Lambda.iml" filepath="$PROJECT_DIR$/lambda/Lambda.iml" />
       <module fileurl="file://$PROJECT_DIR$/Producer-Consumer-Supplier/Producer-Consumer-Supplier.iml" filepath="$PROJECT_DIR$/Producer-Consumer-Supplier/Producer-Consumer-Supplier.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lambda/lambda.iml" filepath="$PROJECT_DIR$/lambda/lambda.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sream-API/Stream-API.iml" filepath="$PROJECT_DIR$/Sream-API/Stream-API.iml" />
     </modules>
   </component>
 </project>
