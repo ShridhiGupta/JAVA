@@ -1,0 +1,41 @@
+class Order {
+
+    private String foodName;
+    private double price;
+
+    public void setFoodName(String foodName) {
+        this.foodName = foodName;
+    }
+
+    public void setPrice(double price) {
+
+        if (price > 0) {
+            this.price = price;
+        } else {
+            System.out.println("Invalid price!");
+        }
+    }
+
+    public String getFoodName() {
+        return foodName;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+}
+
+public class FoodDeliveryApp {
+    public static void main(String[] args) {
+
+        Order order = new Order();
+
+        order.setFoodName("Pizza");
+        order.setPrice(299);
+
+        // order.price = -500;  
+
+        System.out.println("Food: " + order.getFoodName());
+        System.out.println("Price: " + order.getPrice());
+    }
+}
