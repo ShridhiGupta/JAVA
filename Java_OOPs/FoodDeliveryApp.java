@@ -1,9 +1,7 @@
 // Complete OOP POC
 // Food Delivery Management System
 
-// ======================================================
 // 1. INTERFACE - ABSTRACTION
-// ======================================================
 
 interface Payment {
 
@@ -11,9 +9,7 @@ interface Payment {
 }
 
 
-// ======================================================
 // 2. ABSTRACT CLASS - ABSTRACTION
-// ======================================================
 
 abstract class FoodOrder {
 
@@ -70,9 +66,7 @@ abstract class FoodOrder {
 }
 
 
-// ======================================================
 // 3. INHERITANCE
-// ======================================================
 
 class OnlineOrder extends FoodOrder implements Payment {
 
@@ -93,9 +87,7 @@ class OnlineOrder extends FoodOrder implements Payment {
     }
 
 
-    // ==================================================
-    // METHOD OVERRIDING - RUNTIME POLYMORPHISM
-    // ==================================================
+    // METHOD OVERRIDING - RUNTIME POLYMORPHISM 
 
     @Override
     void calculateDeliveryCharge() {
@@ -104,9 +96,7 @@ class OnlineOrder extends FoodOrder implements Payment {
     }
 
 
-    // ==================================================
     // INTERFACE IMPLEMENTATION
-    // ==================================================
 
     @Override
     public void pay(double amount) {
@@ -117,9 +107,7 @@ class OnlineOrder extends FoodOrder implements Payment {
     }
 
 
-    // ==================================================
     // METHOD OVERLOADING - COMPILE-TIME POLYMORPHISM
-    // ==================================================
 
     void addFood(String food) {
 
@@ -164,9 +152,7 @@ class CODOrder extends FoodOrder {
 }
 
 
-// ======================================================
 // 5. MAIN CLASS
-// ======================================================
 
 public class FoodDeliveryApp {
 
@@ -175,9 +161,7 @@ public class FoodDeliveryApp {
         System.out.println("===== FOOD DELIVERY SYSTEM =====");
 
 
-        // ==================================================
         // CLASS + OBJECT
-        // ==================================================
 
         OnlineOrder order =
             new OnlineOrder(
@@ -187,9 +171,7 @@ public class FoodDeliveryApp {
             );
 
 
-        // ==================================================
         // ENCAPSULATION
-        // ==================================================
 
         System.out.println(
             "\nCustomer: " + order.getCustomerName()
@@ -203,30 +185,23 @@ public class FoodDeliveryApp {
         );
 
 
-        // ==================================================
         // INHERITANCE
-        // ==================================================
 
         order.showOrderDetails();
 
 
-        // ==================================================
         // ABSTRACTION
-        // ==================================================
+        // ABSTRACTION
 
         order.calculateDeliveryCharge();
 
 
-        // ==================================================
         // INTERFACE
-        // ==================================================
 
         order.pay(order.getTotalAmount());
 
 
-        // ==================================================
         // METHOD OVERLOADING
-        // ==================================================
 
         System.out.println("\n--- Method Overloading ---");
 
@@ -235,18 +210,14 @@ public class FoodDeliveryApp {
         order.addFood("Burger", 2);
 
 
-        // ==================================================
         // SUPER
-        // ==================================================
 
         System.out.println("\n--- Using super ---");
 
         order.showFullOrder();
 
 
-        // ==================================================
         // RUNTIME POLYMORPHISM
-        // ==================================================
 
         System.out.println("\n--- Runtime Polymorphism ---");
 
@@ -268,9 +239,7 @@ public class FoodDeliveryApp {
         order2.calculateDeliveryCharge();
 
 
-        // ==================================================
         // INTERFACE POLYMORPHISM
-        // ==================================================
 
         System.out.println("\n--- Interface Polymorphism ---");
 
@@ -284,9 +253,7 @@ public class FoodDeliveryApp {
         payment.pay(399);
 
 
-        // ==================================================
         // STATIC
-        // ==================================================
 
         System.out.println("\n--- Static ---");
 
@@ -295,9 +262,7 @@ public class FoodDeliveryApp {
         );
 
 
-        // ==================================================
         // FINAL
-        // ==================================================
 
         System.out.println("\n--- Final ---");
 
